@@ -61,8 +61,13 @@ article{
 .video{
     margin: 10px;
 }
+.video:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
 .imagen{
     margin-left: 200px;
+    transform: skewX(5deg);
    
 }
 .textohome{
@@ -73,6 +78,7 @@ article{
     margin-left: 800px;
     padding: 10px;
     border: solid 5px black;
+    transform: skewX(-5deg);
 }
 .contenido{
   width: 30%;
@@ -123,6 +129,7 @@ article{
 .titulo1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
 
 
 @media only screen and (max-width: 320px){
