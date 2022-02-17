@@ -78,7 +78,7 @@ article{
     margin-left: 800px;
     padding: 10px;
     border: solid 5px black;
-    transform: skewX(-5deg);
+    transform: skewX(-10deg);
 }
 .contenido{
   width: 30%;
