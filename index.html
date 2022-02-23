@@ -11,43 +11,47 @@
 </head>
 
 <body> 
+        <!--inicio de header-->
     <header>
-        <p>brookings <span>studio</span></p>
-        <nav>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="quienes-somos.html"><li>Quienes somos</li></a>
-                <a href="contacto.html"><li>Contacto</li></a>
-                <a href="servicios.html"><li>Servicios</li></a>
-                <a href="noticias.html"><li>Noticias</li></a>
-                
-            </ul>
+        <h2 class="logo">Brookings studio</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <!--inicio secciones-->
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="quienes-somos.html">Quienes somos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="noticias.html">Noticias</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
         </nav>
-        
-    </header>
-    <article>
-        
-        <section class="multimedia">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/47VkjO3XouQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <img class="imagen" src="imagenes/foto microfono2.jpg" alt="imagen de microfono 2" width="470">
-        </section>
+        <!--fin secciones-->
+    </header> 
+    <!--fin de header-->
+    <!--inicio banner-->
+    <section id="banner">
+        <div class="contenido-banner">
+            <h2><span>ESTUDIO DE GRABACION: </span>LA CASA DEL SONIDO <p>Grabamos tu proyecto en la mejor calidad, desde voces a instrumentos de todo tipo y estilo musical.</p></h2>
+            <a href="#" class="boton-empezar">Empezar</a>
+        </div>
+    </section>  
+    <!--fin banner-->
+    <!-- inicio multimedia-->
+    <section id="multimedia">
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/47VkjO3XouQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div>   
             <ul class="contenido">
                 <a href="servicios.html"><button class="boton grabacion" >grabacion</button></a>
                 <a href="servicios.html"><button class="boton mezcla">mezcla</button></a>
                 <a href="servicios.html"><button class="boton master">master</button></a>
             </ul>    
-            <p class="textohome">
-                Grabamos tu proyecto en la mejor calidad, desde voces a instrumentos de todo tipo y estilo musical.
-                Mezclamos tus canciones a nivel profesional, con amplia experiencia.
-                El toque final de tu proyecto para que suene en la más alta fideli
-                Nuestro equipo cuenta con productores artísticos y músicos, que ayudan a transformar tus ideas en un disco o single.
-             </p>
         </div>
-         
-    </article>
-
+    </section>
+        <!-- fin multimedia --> 
         <!--inicio footer-->
 
     <footer class="footer">

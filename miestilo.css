@@ -1,102 +1,137 @@
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
- background-image:url(imagenes/fondo\ guitar-home\ .jpg);
- background-size: cover;
- background-position: center;
+    padding: 0; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box
 }
 header{
     height: 100px;
-    width: 100%;
-    background-color: rgb(4, 37, 59);
+    background:rgb(4, 24, 37);
+    padding: 0 50px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-header p{
-    float: right;
-    width: 30%;
-    margin: 20px;
-    font-size: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: capitalize;
-}
-header span{
-    color: white;
+.logo{
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;  
 }
 
-header nav{
-    float: left;
-    
+.menu a{
+    color:#ffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
 }
-nav ul li{
-    
-    display: inline-block;
-    margin: 15px;
-    padding: 15px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    background-color: gray;
-    border: solid 1px black
 
-
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
 }
-nav a{
+.mostrar-menu{
+    order:1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
     color: black;
 }
-nav a:hover{
-    color: white;
+
+#check{
+    display: none;
 }
-article{
-    height: 100vh;
+
+/*banner*/
+#banner{
+    padding: 0 50px;
+    background-image: url(imagenes/fondo\ guitar-home\ .jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner::before{
+    content: '';
+    background: rgba(16, 17, 31, 0.6);
+    position: absolute;
     width: 100%;
+    height: 50vh;
+    left: 0;
+}
+.contenido-banner{
+    position: relative;
+    color: #ffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido-banner h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.contenido-banner h2 span{
+    font-weight: 600;
     
 }
-.multimedia{
-    display: inline-block;
-    margin: 20px;
-    padding: 20px;
+.contenido-banner p{
+    font-size: 20px;
+    font-weight: 200;
 }
-.video{
-    margin: 10px;
+.boton-empezar{
+    text-decoration: none;
+    color: #ffff;
+    border: 1px solid cadetblue;
+    padding: 10px 20px;
+    align-self:baseline;
+}
+.boton-empezar:hover{
+    background: rgb(4, 37, 59);
+}
+
+/* fin banner*/
+/* inicio multimedia*/
+
+#multimedia{
+    padding: 50px 50px;
+    display: flex;
+    justify-content:center;
+    text-align: center; 
+    background-image: url(imagenes/fondo\ multipista.png);
+    background-position: center;
+    background-size: cover;
+
 }
 .video:hover{
     transform: scale(1.05);
     transition: all 2s;
 }
-.imagen{
-    margin-left: 200px;
-    transform: skewX(10deg);
-    
-   
-}
-.textohome{
-    background-color: grey;
-    font-size: 20px;
-    font-family: sans-serif;
-    width: 40%;
-    margin-left: 800px;
-    padding: 10px;
-    border: solid 5px black;
-    transform: skewX(-10deg);
-}
 .contenido{
-  width: 30%;
-  min-height: 50px;
-  background-color: gray;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  
-  
-
+  padding: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
 }
 .boton{
-    height: 100%;
-    width: 120px;
-    background-color: rgb(4, 37, 59);
-    border: 2px solid #ffff; 
-
+    padding: 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+.boton:hover{
+    transform: scale(0.9);
+    transition: all 1s;
+    background: rgb(11, 32, 46);
+    color: white;
 }
 .footer{
     background-color: rgb(4, 37, 59);
@@ -113,7 +148,9 @@ article{
     background-size: cover;
     background-position: center;
     display: grid;
-    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    padding: 10px;
     grid-gap: 5px;
   
 }
@@ -128,27 +165,10 @@ article{
 
 }
 .titulo1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
-
-
-
-@media only screen and (max-width: 320px){
-    .item{
-        height: 200px;}    
-}
-@media only screen and (min-width: 320px) and (max-width:480px){
-
-    .servicios{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media only screen and (min-width: 400px){
-
-.servicios{
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 200px);
-}
+    
 .item1{
     grid-column: 1/2;
     grid-row: 2/4;
@@ -177,4 +197,89 @@ article{
     background-size: cover;
     background-position: center;
 }
+
+
+/*RESPONSIVE*/
+@media(max-width: 768px){
+    /*header*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:rgb(4, 37, 59);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.7s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+     /*fin header*/
+     /*multimedia*/
+     #multimedia{
+        flex-direction: column;
+     }
+    .video{
+        width: 410px;
+        height: 260px;
+    }
+    /*fin multimedia*/
+    /*servicios*/
+    .servicios{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 200px);
+        
+    }
+    
+    .item1{
+        grid-column: 1/1;
+        grid-row: 2/1;
+        background-image: url(imagenes/microphone-4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item2{
+        grid-column: 1/2;
+        grid-row: 2/2;
+        background-image: url(imagenes/produccion.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item3{
+        grid-column: 1/2;
+        grid-row: 3/3;
+        background-image: url(imagenes/mezcla.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .item4{
+        grid-column: 1/2;
+        grid-row: 4/4;
+        background-image: url(imagenes/master.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    
 }
+   
+
+
