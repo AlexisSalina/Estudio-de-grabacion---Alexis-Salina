@@ -1,3 +1,43 @@
+
+$ancho: 700px;
+$alto: 200px;
+
+$variables: (
+    var1:100%,
+    var2: 50%,
+    var3: 20%,
+);
+//colors
+$blue: blue;
+$red: red;
+$white: #ffff;
+$grey: #333;
+
+//sizes
+$sizes1: 30px;
+$sizes2: 50px;
+$sizes3: 100px;
+
+@each $var in $variables{
+    .noticias1{
+        background-color: $grey;
+        height: 200px;
+        text-align: center;
+        padding: 20px;
+}
+}
+    .noticias2 {
+        @extend .noticias1;
+    }
+@mixin sizes($width, $height, $border) {
+    height: $height;
+    width: $width;
+    border: $border;
+}
+.noticias1{
+@include sizes (100%, 200px, 2px solid rgb(14, 19, 44));
+}
+
 *{
     margin: 0;
     padding: 0; 
@@ -51,7 +91,7 @@ header{
 /*banner*/
 #banner{
     padding: 0 50px;
-    background-image: url(imagenes/fondo\ guitar-home\ .jpg);
+    background-image: url(/imagenes/fondo\ guitar-home\ .jpg);
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -105,7 +145,7 @@ header{
     display: flex;
     justify-content:center;
     text-align: center; 
-    background-image: url(imagenes/fondo\ multipista.png);
+    background-image: url(/imagenes/fondo\ multipista.png);
     background-position: center;
     background-size: cover;
 
@@ -144,7 +184,7 @@ header{
     width: 100%;
     background-color: black;
     color: #ffff;
-    background-image: url(imagenes/tenor-saxophon\ fondo.jpg);
+    background-image: url(/imagenes/tenor-saxophon\ fondo.jpg);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -172,28 +212,28 @@ header{
 .item1{
     grid-column: 1/2;
     grid-row: 2/4;
-    background-image: url(imagenes/microphone-4.jpg);
+    background-image: url(/imagenes/microphone-4.jpg);
     background-size: cover;
     background-position: center;
 }
 .item2{
     grid-column: 2/3;
     grid-row: 2/4;
-    background-image: url(imagenes/produccion.jpg);
+    background-image: url(/imagenes/produccion.jpg);
     background-size: cover;
     background-position: center;
 }
 .item3{
     grid-column: 3/4;
     grid-row: 2/4;
-    background-image: url(imagenes/mezcla.jpg);
+    background-image: url(/imagenes/mezcla.jpg);
     background-size: cover;
     background-position: center;
 }
 .item4{
     grid-column: 4/5;
     grid-row: 2/4;
-    background-image: url(imagenes/master.jpg);
+    background-image: url(/imagenes/master.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -252,34 +292,31 @@ header{
     .item1{
         grid-column: 1/1;
         grid-row: 2/1;
-        background-image: url(imagenes/microphone-4.jpg);
+        background-image: url(/imagenes/microphone-4.jpg);
         background-size: cover;
         background-position: center;
     }
     .item2{
         grid-column: 1/2;
         grid-row: 2/2;
-        background-image: url(imagenes/produccion.jpg);
+        background-image: url(/imagenes/produccion.jpg);
         background-size: cover;
         background-position: center;
     }
     .item3{
         grid-column: 1/2;
         grid-row: 3/3;
-        background-image: url(imagenes/mezcla.jpg);
+        background-image: url(/imagenes/mezcla.jpg);
         background-size: cover;
         background-position: center;
     }
     .item4{
         grid-column: 1/2;
         grid-row: 4/4;
-        background-image: url(imagenes/master.jpg);
+        background-image: url(/imagenes/master.jpg);
         background-size: cover;
         background-position: center;
     }
 
     
 }
-   
-
-
