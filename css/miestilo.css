@@ -1,30 +1,3 @@
-.noticias1, .noticias2 {
-  background-color: #333;
-  height: 200px;
-  text-align: center;
-  padding: 20px;
-}
-
-.noticias1, .noticias2 {
-  background-color: #333;
-  height: 200px;
-  text-align: center;
-  padding: 20px;
-}
-
-.noticias1, .noticias2 {
-  background-color: #333;
-  height: 200px;
-  text-align: center;
-  padding: 20px;
-}
-
-.noticias1, .noticias2 {
-  height: 200px;
-  width: 100%;
-  border: 2px solid #0e132c;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -34,9 +7,9 @@
 
 header {
   height: 100px;
-  background: #041825;
+  background: #020611;
   padding: 0 50px;
-  color: aliceblue;
+  color: #ffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,38 +19,29 @@ header {
   text-transform: uppercase;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 200;
+  text-shadow: 1px 1px 5px #ffff;
+  font-size: 33px;
+  cursor: pointer;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  box-sizing: border-box;
-}
-
-header {
-  height: 100px;
-  background: #041825;
-  padding: 0 50px;
-  color: aliceblue;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 20px;
-}
-
-.logo {
-  text-transform: uppercase;
+#logo {
+  color: #c4c4c4;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 200;
+}
+
+.anuncio {
+  color: black;
 }
 
 .menu a {
-  color: aliceblue;
+  color: #ffff;
   text-transform: uppercase;
   text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
   padding: 0 10px;
   transition: 0.4s;
+  font-size: 16px;
 }
 
 .mostrar-menu,
@@ -95,7 +59,7 @@ header {
 .menu a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover {
-  color: black;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 #check {
@@ -111,17 +75,9 @@ header {
   background-position: center;
 }
 
-#banner {
-  padding: 0 50px;
-  background-image: url(imagenes/fondo\ guitar-home\ .jpg);
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-}
-
 #banner::before {
   content: "";
-  background: rgba(16, 17, 31, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   width: 100%;
   height: 50vh;
@@ -130,8 +86,10 @@ header {
 
 .contenido-banner {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black;
   position: relative;
-  color: aliceblue;
+  color: #ffff;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -139,7 +97,7 @@ header {
 }
 
 .contenido-banner h2 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 400;
   padding: 10px 0px;
 }
@@ -155,14 +113,14 @@ header {
 
 .boton-empezar {
   text-decoration: none;
-  color: aliceblue;
+  color: #ffff;
   border: 1px solid cadetblue;
   padding: 10px 20px;
   align-self: baseline;
 }
 
 .boton-empezar:hover {
-  background: #041825;
+  background: #020611;
 }
 
 /* fin banner*/
@@ -172,17 +130,7 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
-  background-image: url(/imagenes/fondo\ multipista.png);
-  background-position: center;
-  background-size: cover;
-}
-
-#multimedia {
-  padding: 50px 50px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background-image: url(imagenes/fondo\ multipista.png);
+  background-color: #020611;
   background-position: center;
   background-size: cover;
 }
@@ -210,12 +158,12 @@ header {
 .boton:hover {
   transform: scale(0.9);
   transition: all 1s;
-  background: #0b202e;
-  color: white;
+  background: #020611;
+  color: #ffff;
 }
 
 .footer {
-  background-color: #04253b;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .footer div {
@@ -238,7 +186,7 @@ header {
 }
 
 .item {
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.6);
   border: 2px solid #ffff;
 }
 
@@ -259,8 +207,8 @@ header {
 .boton:hover {
   transform: scale(0.9);
   transition: all 1s;
-  background: #041825;
-  color: aliceblue;
+  background: #020611;
+  color: #ffff;
 }
 
 .item1 {
@@ -294,73 +242,165 @@ header {
 }
 
 .footer {
-  background-color: #041825;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  justify-content: 50px;
 }
 
 .footer div {
   display: inline;
 }
 
-.servicios {
-  height: 800px;
+.contacto {
+  background-color: #020611;
   width: 100%;
-  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+div h1 {
   color: #ffff;
-  background-image: url(imagenes/tenor-saxophon\ fondo.jpg);
-  background-size: cover;
-  background-position: center;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 200px);
-  padding: 10px;
-  grid-gap: 5px;
+  text-shadow: 1px 1px 10px black;
+  font-size: 40px;
+  text-align: center;
 }
 
-.item {
-  background-color: gray;
-  border: 2px solid aliceblue;
+div h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  position: relative;
+  color: black;
+  text-align: center;
 }
 
-.item:hover {
-  transform: scale(1.05);
-  transition: all 2s;
-  filter: grayscale(100%);
+.form {
+  background-color: #020611;
+  padding: 30px;
+  color: #ffff;
+  text-shadow: 1px 1px 4px #ffff;
 }
 
-.titulo1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.about {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #020611;
 }
 
-.item1 {
-  grid-column: 1/2;
-  grid-row: 2/4;
-  background-image: url(imagenes/microphone-4.jpg);
-  background-size: cover;
-  background-position: center;
+.about img {
+  height: auto;
+  width: 430px;
 }
 
-.item2 {
-  grid-column: 2/3;
-  grid-row: 2/4;
-  background-image: url(imagenes/produccion.jpg);
-  background-size: cover;
-  background-position: center;
+.about-text {
+  width: 550px;
 }
 
-.item3 {
-  grid-column: 3/4;
-  grid-row: 2/4;
-  background-image: url(imagenes/mezcla.jpg);
-  background-size: cover;
-  background-position: center;
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.item4 {
-  grid-column: 4/5;
-  grid-row: 2/4;
-  background-image: url(imagenes/master.jpg);
-  background-size: cover;
-  background-position: center;
+.about-text h2 {
+  color: #a56b34;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-text h5 {
+  color: #ffff;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.about-text p {
+  color: #636363;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #a56b34;
+  color: #ffff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid #ffff;
+}
+
+.noticias {
+  background-color: #020611;
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.noticias1, .noticias2 {
+  height: 400px;
+  width: 350px;
+  padding: 20px 35px;
+  background-color: #636363;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.titulo-noticias {
+  color: #020611;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.pra p {
+  color: black;
+  font-size: 14px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+.button-leer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.img-noticias {
+  justify-content: center;
 }
 
 /*RESPONSIVE*/
@@ -375,93 +415,7 @@ header {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #04253b;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 100px 0px;
-    z-index: 100;
-    transition: 0.7s;
-  }
-
-  .menu a {
-    display: block;
-    padding: 20px;
-  }
-
-  .esconder-menu {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-
-  #check:checked ~ .menu {
-    right: 0;
-  }
-
-  /*fin header*/
-  /*multimedia*/
-  #multimedia {
-    flex-direction: column;
-  }
-
-  .video {
-    width: 410px;
-    height: 260px;
-  }
-
-  /*fin multimedia*/
-  /*servicios*/
-  .servicios {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 200px);
-  }
-
-  .item1 {
-    grid-column: 1/1;
-    grid-row: 2/1;
-    background-image: url(imagenes/microphone-4.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .item2 {
-    grid-column: 1/2;
-    grid-row: 2/2;
-    background-image: url(imagenes/produccion.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .item3 {
-    grid-column: 1/2;
-    grid-row: 3/3;
-    background-image: url(imagenes/mezcla.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .item4 {
-    grid-column: 1/2;
-    grid-row: 4/4;
-    background-image: url(imagenes/master.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-}
-/*RESPONSIVE*/
-@media (max-width: 768px) {
-  /*header*/
-  .mostrar-menu,
-.esconder-menu {
-    display: block;
-  }
-
-  .menu {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #04253b;
+    background: #020611;
     right: -100%;
     top: 0;
     text-align: center;
@@ -533,6 +487,49 @@ header {
     background-image: url(/imagenes/master.jpg);
     background-size: cover;
     background-position: center;
+  }
+
+  /*noticias*/
+  .box {
+    display: block;
+    padding: 20px;
+  }
+
+  /*contacto*/
+  .contacto {
+    display: block;
+    justify-content: center;
+  }
+
+  iframe {
+    width: 380px;
+    height: 300px;
+  }
+
+  .form {
+    padding: 60px;
+  }
+
+  /*Quienes Somos*/
+  .main {
+    display: block;
+  }
+
+  .about-text h2 {
+    font-size: 40px;
+  }
+
+  .about-text h5 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    width: 70%;
+    font-size: 13px;
+  }
+
+  .button {
+    border-radius: 10px;
   }
 }
 
