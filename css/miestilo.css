@@ -30,7 +30,7 @@ header {
 }
 
 .anuncio {
-  color: black;
+  color: #a56b34;
 }
 
 .menu a {
@@ -59,7 +59,7 @@ header {
 .menu a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover {
-  color: rgba(0, 0, 0, 0.6);
+  color: #a56b34;
 }
 
 #check {
@@ -126,7 +126,7 @@ header {
 /* fin banner*/
 /* inicio multimedia*/
 #multimedia {
-  padding: 50px 50px;
+  padding: 100px 50px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -141,15 +141,14 @@ header {
 }
 
 .contenido {
-  padding: 60px;
-  height: 50px;
+  padding: 20px;
   display: flex;
   justify-content: center;
 }
 
 .boton {
-  padding: 30px;
-  margin: 10px;
+  height: 250px;
+  width: 190px;
   text-transform: uppercase;
   font-size: 20px;
   cursor: pointer;
@@ -160,6 +159,24 @@ header {
   transition: all 1s;
   background: #020611;
   color: #ffff;
+}
+
+.grabacion {
+  background-image: url(/imagenes/artista\ grabando.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.mezcla {
+  background-image: url(/imagenes/studio\ de\ grabacion.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.master {
+  background-image: url(/imagenes/produccion.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .footer {
@@ -243,6 +260,7 @@ header {
 
 .footer {
   background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
   height: 50px;
   text-align: center;
   padding: 10px;
@@ -272,15 +290,72 @@ div h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   position: relative;
-  color: black;
+  color: #a56b34;
   text-align: center;
 }
 
 .form {
+  width: 280px;
+  height: 380px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+  border-radius: 10px;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.form h2 {
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #a56b34;
+  font-size: 22px;
   background-color: #020611;
-  padding: 30px;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.form input {
+  width: 240px;
+  height: 35px;
+  background-color: transparent;
+  border-bottom: 1px solid #020611;
+  border-top: none;
+  border-right: none;
+  border-left: none;
   color: #ffff;
-  text-shadow: 1px 1px 4px #ffff;
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #ffff;
+  font-family: Arial;
+}
+
+.btn-form {
+  width: 130px;
+  height: 50px;
+  background: #ffff;
+  border: none;
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: Arial;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffff;
+  transition: 0.4s ease;
+}
+
+.btn-form:hover {
+  background: #020611;
+  color: #020611;
 }
 
 .about {
@@ -362,7 +437,7 @@ button:hover {
 }
 
 .noticias1, .noticias2 {
-  height: 400px;
+  height: 450px;
   width: 350px;
   padding: 20px 35px;
   background-color: #636363;
@@ -399,11 +474,89 @@ button:hover {
   transition: 0.4s;
 }
 
+.button-leer:hover {
+  transform: scale(0.9);
+  transition: all 1s;
+  background: #020611;
+  color: #a56b34;
+}
+
 .img-noticias {
   justify-content: center;
 }
 
 /*RESPONSIVE*/
+@media (max-width: 1250px) {
+  #multimedia {
+    display: block;
+    justify-content: center;
+  }
+}
+@media (max-width: 1150px) {
+  .about {
+    text-align: center;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .about-text h2 {
+    font-size: 110px;
+    margin-bottom: 20px;
+  }
+
+  .about-text h5 {
+    font-size: 40px;
+  }
+
+  .about-text p {
+    font-size: 30px;
+    width: 100%;
+    line-height: none;
+    letter-spacing: none;
+  }
+
+  /*noticias*/
+  .box {
+    justify-content: center;
+    display: grid;
+    padding: 20px;
+  }
+
+  .noticias1, .noticias2 {
+    width: 90%;
+    height: 85%;
+  }
+
+  .pra p {
+    color: #ffff;
+    font-size: 20px;
+  }
+}
+@media (max-width: 900px) {
+  /*contacto*/
+  .contacto {
+    display: block;
+    justify-content: center;
+  }
+
+  iframe {
+    width: 500px;
+    height: 300px;
+  }
+
+  .form {
+    margin: 20px;
+    width: 90%;
+    text-align: left;
+    height: 200px;
+  }
+}
 @media (max-width: 768px) {
   /*header*/
   .mostrar-menu,
@@ -498,16 +651,18 @@ button:hover {
   /*contacto*/
   .contacto {
     display: block;
-    justify-content: center;
   }
 
   iframe {
-    width: 380px;
+    display: block;
+    width: 450px;
     height: 300px;
   }
 
   .form {
-    padding: 60px;
+    margin: 35px;
+    width: 400px;
+    height: 340px;
   }
 
   /*Quienes Somos*/
@@ -524,8 +679,8 @@ button:hover {
   }
 
   .about-text p {
-    width: 70%;
-    font-size: 13px;
+    width: 100%;
+    font-size: 20px;
   }
 
   .button {
